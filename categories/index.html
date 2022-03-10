@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CPP八股, Yuyu&#39;s liFe">
-    <meta name="description" content="#####数组和链表：1.按照序号查找时，数组可以随机访问，比链表快。2.按值查找时，如果数组无序，时间复杂度都为On，如果有序，可以用折半查找来降低到o(logn)
-####引用和指针的区别1.指针可以为空，引用不可以为空2.指针常量本身">
+    <meta name="keywords" content="分类, Yuyu&#39;s liFe">
+    <meta name="description" content="尚未死去的人啊，歌唱吧！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CPP八股 | Yuyu&#39;s liFe</title>
+    <title>分类 | Yuyu&#39;s liFe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -222,12 +221,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CPP八股</h1>
+                    <h1 class="description center-align post-title">categories</h1>
                 </div>
             </div>
         </div>
@@ -355,7 +354,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-04
+                    2022-03-10
                 </div>
                 
 
@@ -376,12 +375,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>#####数组和链表：<br>1.按照序号查找时，数组可以随机访问，比链表快。<br>2.按值查找时，如果数组无序，时间复杂度都为On，如果有序，可以用折半查找来降低到o(logn)</p>
-<p>####引用和指针的区别<br>1.指针可以为空，引用不可以为空<br>2.指针常量本身(以p为例)允许寻址，即&amp;p返回指针常量(常变量)本身的地址，被引用对象用*p表示；引用变量本身(以r为例)不允许寻址，&amp;r返回的是被引用对象的地址，而不是变量r的地址(r的地址由编译器掌握，程序员无法直接对它进行存取)，被引用对象直接用r表示。<br>3.指针传参相当于值传递，传进来地址，修改的是指针指向的值的话，那么外部会改变。因为以指针为参数进行传值，也是在函数内部复制了一个指针的副本，因而在内部修改指针本身即修改其副本并不影响外部的指针，但是两个指针都是指向同一个内存空间的，因而如果在函数内部修改了指针指向的内容，外部指针指向的内容也就相应改变了。</p>
-<p>####const<br>1.常对象只能调用常函数<br>2.可以有常函数，只能读取<br>3.产生临时量来存储常量。右值引用可以读写，常引用只能读。<br>####static:<br>1.修饰普通变量，变量存储在静态区，编译阶段就分配了空间，会有系统默认值初始化。<br>2.修饰普通函数，仅在定义该函数的文件里才能使用。<br>3.修饰成员变量、成员函数，不需要生成变量，用类来调用。在static函数内不能访问非静态成员。</p>
-<p>####this指针：<br>1.隐含于每一个非静态成员函数中的特殊指针，指向调用的对象。<br>2.调用函数时，将对象地址赋给this,然后调用成员函数。（作为参数传入）<br>3.是个右值。不能取this地址。</p>
-<p>####inline内联函数<br>1.有安全性检查<br>3.类中定义声明的函数是内联的<br>4.省去了参数压栈，栈帧开辟回收等，提高效率。<br>5.会做安全检查，运行时可调试、<br>6.虚函数表现多态时不能内联。虚函数的多态体现在运行期，内联在编译时期。唯一可以内联是编译器知道所调用的对象是哪个，这只有在编译器具有实际对象而不是对象的指针或引用时才会发生。<br>####右值引用：<br>1.为了支持移动操作（移动构造函数和移动赋值函数），自由接管右值引用的对象。<br>2.可以取地址的，有名字的，非临时值。不能取地址的，没有名字的，临时的就是右值。<br>####virtual<br>1.虚析构函数是为了解决基类指向派生类这个问题，析构时先调用派生类再调用基类的析构函数。<br>#####构造函数问题：先构造基类，再构造子类。析构函数先析构子类后基类。如果一个类有可能被继承，应讲其析构函数定义为虚函数。<br>####volatile</p>
-
+                
                 
             </div>
             <hr/>
@@ -407,7 +401,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsforyu.github.io/2022/03/04/CPP%E5%85%AB%E8%82%A1/">https://jsforyu.github.io/2022/03/04/CPP%E5%85%AB%E8%82%A1/</a>
+                    <a href="https://jsforyu.github.io/categories/index.html">https://jsforyu.github.io/categories/index.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -621,13 +615,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/03/04/CPP%E5%85%AB%E8%82%A1/">
+                <a href="/categories/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CPP八股">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="categories">
                         
-                        <span class="card-title">CPP八股</span>
+                        <span class="card-title">categories</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -638,7 +632,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
                             </span>
                         <span class="publish-author">
                             
@@ -656,16 +650,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/01/hello-world/">
+                <a href="/categories/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="categories">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">categories</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -676,7 +670,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
                             </span>
                         <span class="publish-author">
                             
@@ -686,6 +680,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
